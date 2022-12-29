@@ -1,0 +1,298 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#side-container{
+    left:0;
+    position:fixed;
+    width:30%;
+    overflow: auto;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+#logo-img i{
+    
+    font-size:4rem;
+    margin:1em;
+}
+#logo-img i:hover{
+    color:#1d3c5e;
+}
+#logo-container{
+    text-align:center;
+    color:white;
+}
+#logo-container ul{
+    display:flex;
+    gap:1em;
+    justify-content: center;
+    list-style:none;
+    color:white;
+    align-items: center;
+    margin-top:17px;
+}
+#logo-container ul li {
+    color:rgb(243, 243, 243);
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color: rgb(25, 24, 24);
+    align-items:center;
+}
+#logo-container ul li:hover{
+    background-color: rgb(57, 64, 121);
+}
+#logo-container ul li a {
+    color:white;
+    text-align:center;
+}
+#logo-container ul li a i{
+    padding-top: 7px;
+}
+#links-container{
+    margin-top: 5rem;
+}
+#links-container ul{
+    list-style:none;
+    text-decoration:none;
+    display:flex;
+    flex-direction: column;
+
+ 
+
+}
+#links-container ul li {
+    width:100%;
+    height:4rem;
+    
+
+}
+
+#links-container ul li a{
+    text-decoration:none;
+    user-select: none;
+    color:rgb(101, 103, 103);
+
+}
+#links-container ul li  a:hover i{
+    
+    color:#1281ff;
+}
+#links-container ul li a:hover{
+    color:white;
+}
+#links-container ul li a i {
+    padding-right:22px;
+}
+#bar{
+    display:none;
+}
+@media screen and (max-width: 904px){
+    #side-container{
+      width:40%;
+      min-width:22em;
+      position:fixed;
+      overflow:auto;
+      display:none;
+      z-index:900;
+      
+    
+
+    }
+    #bar{
+        display:block;
+        z-index:1000;
+    }
+    
+    
+}
+    
+
+
+#main{
+    width:70%;
+    float:right;
+    height:auto;
+}
+
+#firstrow{
+    width:100%;
+    height: 500px;
+    background-image: url("backgroundimg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#firstrow h1,h4{
+    text-align: center;
+    position:relative;
+    font-size:2em;
+    top:50%;
+    color:rgb(253, 253, 253);
+    text-shadow: 2px 3px 2px rgb(33, 50, 104);
+
+}
+
+#twocontainer{
+    display:flex;
+    gap:2em;
+}
+#forimg{
+width:70%;
+
+}
+#forimg img{
+    background-size: cover;
+    width:100%;
+    height:20em;
+}
+#detail{
+    height:10em;
+    width:40%;
+}
+.detail-links{
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    gap:1em;
+    
+}
+.detail-links li a i{
+    padding-right:0.5em;
+}
+.detail-links li a{
+    color:rgb(23, 22, 22);
+    text-decoration: none;
+    user-select: none;
+    cursor:auto;
+}
+.detail-links li a i{
+    color:rgb(33, 155, 155)
+}
+#fordetail h1{
+    color:rgb(20, 20, 138);
+    
+}
+#detailcontainer{
+    display:flex;
+}
+@media screen and (max-width: 904px){
+    #main{
+        width:100%;
+    }
+    #twocontainer{
+        display:flex;
+        flex-direction: column;
+
+    }
+    #detailcontainer{
+        flex-direction: column;
+        width:100%;
+    }
+    #detail{
+        width:80%;
+        margin:auto;
+    }
+    #fordetail h1,p{
+        width:90%;
+        margin:0.5em auto;
+    }
+  
+    
+}
+@media screen and (max-width: 1000px){
+
+    #twocontainer{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    #forimg{
+        width:100%;
+        
+    }
+    #forimg img{
+        width:70%;
+        position: center;
+        display:block;
+        margin:auto;
+        
+    }
+    #aboutme{
+        display:block;
+        width:90%;
+        margin:auto;
+    }
+   
+    
+}
+@media screen and (max-width:600px){
+    #forimg img{
+        width:100%;
+    }
+    #detail{
+        width:100%;
+    }
+    
+  
+
+}
+#bar{
+    
+    z-index: 5000;
+    position:fixed;
+    right:1em;
+    top:1em;
+    font-size: 1.5rem;
+}
+#fact-item-container{
+    display: grid;
+    user-select: none;
+    grid-template-columns: repeat(4,1fr);
+    width:100%;
+    place-items: center;
+  
+}
+#fact-item h3{
+    color:rgb(173, 0, 254);
+    font-size:2em;
+}
+#facts-container h1,p{
+    width:90%;
+    display:block;
+    margin:auto;
+    
+}
+#facts-container h1{
+    color:#340b46f2;
+}
+#fact-item h3 span{
+ 
+   color:black;
+}
+#facts-container{
+    user-select:none;
+}
+
+#aboutme h2{
+    color:#04498e;
+}
+#fact-item-container{
+    margin:0.4em;
+}
+@media screen and (max-width:600px){
+    #fact-item-container{
+        
+        grid-template-columns:1fr;
+        gap:1em;
+
+    }
+    #fact-item h3{
+        font-size:3rem;
+    }
+}
